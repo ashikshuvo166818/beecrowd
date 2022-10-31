@@ -1,0 +1,39 @@
+#include<stdio.h>
+int main()
+{
+    int i,j,k,arra[10],l;
+    for(i=0;i<10;i++)
+    {
+        scanf("%d",&arra[i]);
+    }
+    for(i=0;i<10;i++)
+    {
+        k=arra[i];
+        for(j=0;j<10;j++)
+        {
+            if(k>arra[j])
+            {
+                k=k;
+            }
+            else
+            {
+                k=arra[j];
+            }
+        }
+    }
+    printf("%d\n",k);
+    l=0;
+    for(i=0;i<10;i++)
+    {
+        if(arra[i]==k)
+        {
+            break;
+        }
+        else
+        {
+            l++;
+        }
+    }
+    printf("%d\n",l+1);
+    return 0;
+}
